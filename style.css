@@ -1,0 +1,258 @@
+/* -------  General Styles ------- */
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+h2 {
+  font-size: 26px;
+  font-weight: 400;
+  margin: 0 10px 10px 10px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+p {
+  line-height: 1.5em;
+  margin: 0;
+}
+
+section {
+  padding: 20px;
+}
+
+section.alternate-background {
+  background-color: #00a699;
+  color: #fff;
+}
+
+main img {
+  width: 100px;
+}
+
+/* ---  Groups & Items --- */
+
+.group {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  flex: 1;
+  margin: 10px;
+}
+
+.item-double {
+  flex: 2;
+}
+
+/* -------  Navigation ------- */
+
+header {
+  background-color: #ff385c;
+  padding: 20px 20px 0 20px;
+  text-align: center;
+}
+
+.logo {
+  font-family: "Pangolin", cursive;
+  font-size: 72px;
+  color: #fff;
+}
+
+header nav ul li {
+  list-style-type: none;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0 20px 0 0;
+}
+
+header nav ul li a:hover {
+  color: #bdbdbd;
+  text-decoration: none;
+}
+
+/* -------  Search Form ------- */
+form {
+  border: 2px solid #ff385c;
+  padding: 10px;
+}
+
+form label {
+  font-weight: bold;
+}
+
+form select,
+form input {
+  margin-bottom: 20px;
+  width: 180px;
+}
+
+form button {
+  background-color: #ff385c;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  padding: 15px;
+  width: 100%;
+}
+
+/* Added additional styles for search form*/
+.form-container {
+  display: flex; 
+  flex-direction: column;
+}
+
+.form-input-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* -------  Footer ------- */
+footer {
+  background-color: #ff385c;
+}
+
+footer p {
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* -------  Header ------- */
+.header ul { 
+  text-align: center; 
+}
+
+.header li { 
+  display: inline-block; 
+}
+
+.header-container {
+  display: flex; 
+  flex-direction: column;  
+}
+
+
+
+/* -------  About Section ------- */
+.about-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.about-responsive {
+  width: 100%;
+  height: auto;
+}
+
+/* -------  Ideas Section ------- */
+.ideas-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column; 
+}
+
+.ideas-responsive{
+  width: 100%;
+  height: auto;
+}
+
+/* -------  Host Section ------- */
+.host-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.host-text-containter {
+  display:flex;
+}
+
+.host-responsive {
+  width: 100%;
+  height: auto;
+}
+
+/* -------  Media Query ------- */
+@media screen and (min-width: 480px) {
+
+  /* -------  Navigation ------- */
+  .header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+  }
+
+/* -------  Search Form ------- */
+  .form-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 50px;
+  }
+
+  .form-input-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; 
+  }
+
+  /* form select,
+  form input{
+    margin-bottom: 20px;
+    min-width:0;
+  } */
+
+  /* -------  About Section ------- */
+  .about-responsive {
+    width: 25%;
+    height: auto;
+  }
+
+  .about-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  /* -------  Ideas Section ------- */
+  .ideas-container {
+    display: flex;
+    flex-direction: row; 
+    gap:20px;  
+  }
+
+  .ideas-event-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .ideas-responsive {
+    height: auto;
+    width: 100%;
+  }
+
+  /* -------  Host Section ------- */
+  .host-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .host-responsive {
+    width: 50%;
+    height: auto;
+  }
+  
+}
